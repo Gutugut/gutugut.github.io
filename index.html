@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falculator - Professional Scientific Calculator</title>
+    <meta name="description" content="Falculator is a powerful scientific calculator app for iOS with unit conversions, tip calculator, and calculation history.">
+    <meta name="keywords" content="calculator, scientific calculator, iOS, unit converter, tip calculator">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 80px;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(145deg, #ff6b35, #f7931e);
+            border-radius: 28px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.4);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #fff 0%, #a8d8ea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.4em;
+            color: #a8d8ea;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        .app-store-btn {
+            display: inline-block;
+            background: #fff;
+            color: #1a1a2e;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .app-store-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 35px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        
+        .feature-card p {
+            color: #a8d8ea;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+        
+        .footer-links {
+            margin-bottom: 25px;
+        }
+        
+        .footer-links a {
+            color: #a8d8ea;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.95em;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            color: #6b7c93;
+            font-size: 0.9em;
+        }
+        
+        .contact {
+            margin-top: 15px;
+        }
+        
+        .contact a {
+            color: #a8d8ea;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .tagline {
+                font-size: 1.1em;
+            }
+            
+            .hero {
+                padding: 40px 20px 60px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="app-icon">🧮</div>
+            <h1>Falculator</h1>
+            <p class="tagline">Professional Scientific Calculator for iOS</p>
+            <a href="https://apps.apple.com/app/id6739860116" class="app-store-btn">
+                Download on App Store
+            </a>
+        </section>
+        
+        <section class="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Scientific Calculations</h3>
+                    <p>Advanced mathematical functions including trigonometry, logarithms, exponentials, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>Unit Converter</h3>
+                    <p>Convert between hundreds of units across length, weight, temperature, speed, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Tip Calculator</h3>
+                    <p>Calculate tips and split bills easily with customizable percentages and rounding options.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Calculation History</h3>
+                    <p>Keep track of all your calculations with a complete history that you can review anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Design</h3>
+                    <p>Modern, intuitive interface designed for both productivity and visual appeal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Reliable</h3>
+                    <p>Lightning-fast calculations with precise results you can count on.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="https://gutugut.github.io/calculatorera-policies/privacy.html">Privacy Policy</a>
+            <a href="https://gutugut.github.io/calculatorera-policies/terms.html">Terms of Service</a>
+        </div>
+        <p class="copyright">© 2025 Falculator. All rights reserved.</p>
+        <p class="contact">Contact: <a href="mailto:enbilex@gmail.com">enbilex@gmail.com</a></p>
+    </footer>
+</body>
+</html>
